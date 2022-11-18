@@ -14,6 +14,7 @@ def index(id):
         urls.append((k['fields']['URL']).strip())
     if id in ids:
         return redirect(("http://"+urls[ids.index(id)]), code=302)
-app.run()
-
+    
+if __name__ == '__main__':
+    app.run()
 
